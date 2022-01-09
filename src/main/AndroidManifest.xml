@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infinitefocus.edu1010">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        under
+        application tag
+        -->
+
+        <!-- ads initialisation-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9122586132512857~5946654570" />
+
+        <!-- LAUCH ACTIVITY  start-->
+        <activity android:name="com.infinitefocus.edu1010.SplashScreen.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- LAUCH ACTIVITY end-->
+
+        <activity android:name="com.infinitefocus.edu1010.StartActivity"
+            android:screenOrientation="portrait">n
+
+        </activity>
+
+        <!-- activity parenting  initialisation  from  StartActivity to BooksActivity-->
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.TEST.TestActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.StartActivity" />
+        </activity>
+
+
+        <!-- activity parenting  initialisation  from  StartActivity to BooksActivity1-->
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.TEST.TestDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.Activites.TEST.TestActivity" />
+        </activity>
+
+        <!-- activity parenting  initialisation  from  StartActivity to BooksActivity1-->
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.Books.BooksActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.StartActivity" />
+        </activity>
+
+        <!-- activity parenting  initialisation  from  bookactivity1 to bookdetails-->
+
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.Books.BooksDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.Activites.Books.BooksActivity" />
+        </activity>
+
+
+        <!-- activity parenting  initialisation  from  StartActivity to BooksActivity1-->
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.ExamPapers.PastPapersActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.StartActivity" />
+        </activity>
+
+        <!-- activity parenting  initialisation  from  bookactivity1 to bookdetails-->
+
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.ExamPapers.PastPapersDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.Activites.ExamPapers.PastPapersActivity" />
+        </activity>
+
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.Quizes.QuizesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.StartActivity" />
+        </activity>
+
+        <!-- activity parenting  initialisation  from  bookactivity1 to bookdetails-->
+
+
+        <activity android:name="com.infinitefocus.edu1010.Activites.Quizes.QuizesDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.infinitefocus.edu1010.Activites.Quizes.QuizesActivity" />
+        </activity>
+
+
+    </application>
+
+</manifest>

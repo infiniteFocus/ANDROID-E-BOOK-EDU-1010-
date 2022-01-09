@@ -1,0 +1,12 @@
+ <resources>
+    <string name="app_name">EDU 1010</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="admob_app_id">ca-app-pub-9122586132512857~5946654570</string>
+    <string name="banner_ad_unit">ca-app-pub-9122586132512857/9694327898</string>
+    <string name="interstitial_ad_unit">ca-app-pub-9122586132512857/9226573979</string>
+    <string name="link">Try George Best past papers App to get the best Revision and Questions for zambian students</string>
+    <string name="menu">Menu</string>
+
+
+</resources>
